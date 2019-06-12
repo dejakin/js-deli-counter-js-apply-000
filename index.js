@@ -1,8 +1,16 @@
 let katzDeliLine = []
 
-function takeANumber(array, newCustomer){
-  array.push(newCustomer)
-  return `Welcome, ${newCustomer}. You are number ${array.indexOf(newCustomer)+1} in line.`
+//function takeANumber(array, newCustomer){
+  //array.push(newCustomer)
+  //return `Welcome, ${newCustomer}. You are number ${array//.indexOf(newCustomer)+1} in line.`
+//}
+
+var number = 0
+
+function takeANumber(array){
+  number = number + 1
+  array.push(number)
+  return `You are ticket number ${number}`
 }
 
 function nowServing(array){
